@@ -1,0 +1,13 @@
+1.php artisab make:controller AppController
+2.AppController
+
+	public function index(){
+    	$data = [
+    		'first_name' => 'Panupong',
+    		'last_name' => 'Chamsomboon'
+    	];
+
+    	return view('app',$data);
+    }
+3.html
+ แสดงดาต้า  {{$first_name}} {{$last_name}}
